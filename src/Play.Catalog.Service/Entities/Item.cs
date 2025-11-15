@@ -4,7 +4,8 @@ using MongoDB.Bson;
 
 namespace Play.Catalog.Service.Entities
 {
-    public class Item
+
+    public class Item : IEntity
     {
         [BsonId]
         [BsonGuidRepresentation(GuidRepresentation.Standard)] // Specify representation for Id
